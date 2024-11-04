@@ -42,7 +42,7 @@ int main() {
             mpz_gcd(d, temp, n);
         }
         if (mpz_cmp_ui(d, 1)) {
-
+            printf("%s is a factor", d);
         }
     }
 
