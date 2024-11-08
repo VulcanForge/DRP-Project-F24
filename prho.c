@@ -29,12 +29,12 @@ int main() {
 
 
     //0 means false in C!!!! not true!!!
-    while (!mpz_cmp_ui(d, 1)) {
-        if (!mpz_cmp(t,h)) {
+    while (mpz_cmp_ui(d, 1) == 0) {
+        if (mpz_cmp(t,h) == 0) {
             printf("maybe prime");
             break;
         }
-        if (!mpz_cmp_ui(d, 1)) {
+        if (mpz_cmp_ui(d, 1) == 0) {
             g(t, t, n); //g(t)
             g(h, h, n);
             g(h, h, n); //g(g(h))
